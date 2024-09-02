@@ -13,9 +13,18 @@
           <mat-label>Senha</mat-label>
           <input matInput type="password" required />
         </mat-form-field>
-        <mat-checkbox color="warn">Mantenha-me conectado</mat-checkbox>
+        <mat-checkbox color="warn" (change)="onCheckboxChange($event)"
+          >Mantenha-me conectado</mat-checkbox
+        >
         <div class="button-container">
-          <button mat-raised-button color="warn" type="submit">Entrar</button>
+          <button
+            mat-raised-button
+            color="warn"
+            type="button"
+            (click)="login()"
+          >
+            Entrar
+          </button>
         </div>
       </form>
     </mat-card-content>
