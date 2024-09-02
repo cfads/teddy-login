@@ -25,6 +25,6 @@ export class LoginComponent implements OnInit {
       'manterConectado',
       this.manterConectado ? 'true' : 'false'
     );
-    window.location.href = 'https://teddy-app-flax.vercel.app/';
+    window.location.href = 'https://teddy-iqdokcn6o-cfads-projects.vercel.app/';
   }
 }
